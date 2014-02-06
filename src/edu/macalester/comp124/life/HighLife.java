@@ -3,7 +3,7 @@ package edu.macalester.comp124.life;
 public class HighLife implements RuleSet {
 
     public String getName() {
-        return "Highlife Rules";
+        return "HighLife Rules";
     }
 
     public boolean applyRules(boolean isAlive, int neighborCount) {
