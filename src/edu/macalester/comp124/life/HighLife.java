@@ -8,21 +8,8 @@ public class HighLife implements RuleSet {
 
     public boolean applyRules(boolean isAlive, int neighborCount) {
         if (isAlive){
-            if (neighborCount < 2 || neighborCount > 3){
-                return false;
-            }
-            else {
-                return true;
-            }
-        }
-        else if (!isAlive){
-            if (neighborCount == 3 || neighborCount == 6){
-                return true;
-            }
-            else {
-                return false;
-            }
-        }
-        return true;
+            return(neighborCount == 2 || neighborCount == 3);
+        } else
+            return (neighborCount == 3 || neighborCount == 6);
     }
 }
